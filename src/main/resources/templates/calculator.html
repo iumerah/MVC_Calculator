@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<head>
+<title>Calculator</title>
+
+</head>
+
+<body>
+	<form action = "/" method = "POST">
+         First number: 
+            <input type = "number" name = "firstNumber" value = "" required />
+         <br />
+    
+    <select name="operation">
+  		<option value="+">+</option>
+ 		<option value="-">-</option>
+  		<option value="*">*</option>
+  		<option value="/">/</option>
+  		<option value="^">^</option>
+	</select>
+         <br />
+         Second number: 
+            <input type = "number" name = "secondNumber" value = "" required />
+         <input type = "submit" value ="Submit" />
+    </form>
+    
+    {{#result}}
+    	{{result}}
+    {{/result}}
+    
+    <p>History:</p>
+    {{{history}}}
+    	
+    
+</body>
